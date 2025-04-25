@@ -212,7 +212,7 @@
     var p1 = document.getElementsByClassName("p1")
     var div3 = document.getElementsByClassName("div3");
     
-    function opentab(tabname){
+    function opentab(event, tabname){
         for (el of p1){
             el.classList.remove("active");
         }
@@ -220,6 +220,7 @@
             bl.classList.remove("active-div");
         }
         event.currentTarget.classList.add("active");
+        
         var targetTab = document.getElementById(tabname);
         if (targetTab) {
           targetTab.classList.add("active-div")
