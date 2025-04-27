@@ -6,7 +6,7 @@
     <title>Portfolio</title>
      <link rel="stylesheet" href="personal.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    </head>
 <body>
     <div id="header">
         <div class="div1">
@@ -80,11 +80,11 @@
             <h1 class="h1">About Me</h1>
             <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>Molestias dolorem, veniam error cumque, perferendis,<br> quam officia esse temporibus <br> quas nulla voluptates voluptate! <br> Iusto, ad! Dolorum porro sunt molestiae ullam ex!</p>
         <div class="div2">
-            <p class="p1 active" onclick="opentab(event, 'Skills')">Skills</p>
-            <p class="p1" onclick="opentab(event, 'experience')">Experience</p>
-            <p class="p1" onclick="opentab(event, 'education')">Education</p>
+            <p class="p1 active" data-target="skills">Skills</p>
+            <p class="p1" data-target="experience">Experience</p>
+            <p class="p1" data-target="education">Education</p>
         </div>
-        <div class="div3 active-div" id="Skills">
+        <div class="div3 active-div" id="skills">
             <ul>
                  <li><span>Email Marketing</span><br>Email Marketing</li> 
                 <li><span>Web Development</span><br>Web App Development</li>
@@ -207,8 +207,8 @@
        </div>
        </div>
 
-
-   <script>
+      <script src="personal.js"></script>
+   <!-- <script>
     var p1 = document.getElementsByClassName("p1")
     var div3 = document.getElementsByClassName("div3");
     
@@ -229,9 +229,8 @@
         }
     
        
-    }
+    } -->
 
-   </script>
     <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
@@ -240,6 +239,6 @@
      function closemenu(){
         sidemenu.style.right = "-200px";
     }
-   </script> 
+   </script>  
 </body>
 </html>
